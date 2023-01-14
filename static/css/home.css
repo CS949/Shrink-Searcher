@@ -1,0 +1,68 @@
+html {
+  scroll-behavior: smooth;
+  font-family: Helvetica, sans-serif, Arial;
+  font-size: 62.5%;
+}
+
+@media(max-width:998px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media(max-width:768px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+body {
+  margin: 0 auto;
+  background-color: #e2e2e2;
+}
+
+#faq {
+  padding-left: 65rem;
+
+  background-color: white;
+  border: 2px solid black;
+
+}
+
+
+summary {
+  background-color: white;
+
+  margin: 4px;
+  width: 70rem;
+  padding: .5rem 1.3rem;
+  padding-right: 10rem;
+  font-size: 1.5rem;
+  padding-left: 25rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  transition: height 1s ease;
+  text-align: center;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary:after {
+  content: "\002B";
+}
+
+details[open] summary {
+  border-bottom: .1rem solid rgb(46, 120, 134);
+  margin-bottom: .5rem;
+}
+
+details[open] summary:after {
+  content: "\00D7";
+}
+
+details[open] div {
+  padding: .5rem 1rem;
+}

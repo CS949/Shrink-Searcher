@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-signin-client_id" content="">
+  <title>ShrinkSearcher</title>
+
+  <link rel="stylesheet" href="static/css/chat.css">
+  <link rel="stylesheet" href="static/css/home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Arapey&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/pdn6zdu.css">
+
+  <style>
+    .logo {
+      position: absolute;
+      background-repeat: no-repeat;
+      margin-left: 10px;
+      padding: 0px 40px;
+    }
+
+    .background {
+      background-image: url('/bg\ transp.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100vh;
+    }
+
+    body {
+      background-color: #BABAB8;
+    }
+  </style>
+
+</head>
+
+<body>
+  <header>
+
+    </div>
+    <nav class="navbar">
+      <div class="m">
+      </div>
+      <div class="logo">
+        <img src="/logo.png" alt="">
+      </div>
+      <ul>
+        <li><a href="therapist.html">Therapists</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="#">Home</a></li>
+      </ul>
+    </nav>
+    <div class="background">
+    </div>
+  </header><br><br>
+
+  <!-- CHAT BAR BLOCK -->
+  <div id="">
+    <div class="chat-bar-collapsible">
+      <button id="chat-button" type="button" class="collapsible" style="color: white;">Find your therapist!
+        <i id="chat-icon" class="fa fa-fw fa-comments-o"></i>
+      </button>
+
+      <div class="content" style="max-height: 500px"></div>
+      <div class="full-chat-block">
+        <!-- Message Container -->
+        <div class="outer-container">
+          <div class="chat-container">
+            <!-- Messages -->
+            <div id="chatbox">
+              <h5 id="chat-timestamp"></h5>
+              <div id="res"></div>
+              <!-- <p id="botStarterMessage" class="botText"><span>Loading...</span></p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="slider">
+    <input type="radio" name="slider" id="slide1" checked>
+    <input type="radio" name="slider" id="slide2">
+    <input type="radio" name="slider" id="slide3">
+    <input type="radio" name="slider" id="slide4">
+    <div id="slides">
+      <div id="overflow">
+        <div class="inner">
+          <div class="slide slide_1">
+            <div class="slide-content">
+              <h1>We know times are tough.</h1><br>
+              <h3>One of the major reasons why people drop out of therapy or don’t start is guilt and fear of
+                judgement.</h3><br>
+              <p>By automating our system and only adding human interference when it is absolutely necessary, you can
+                be assured that we’re not listening in on what you have to say.</p><br>
+              <p>Our state-of -the-art AI will match you with the perfect therapist for you as soon as you fill in the
+                contact details and respond to a basic questionnaire that takes about 5-10 minutes to fill out.</p>
+            </div>
+          </div>
+          <div class="slide slide_2">
+            <div class="slide-content">
+              <h1>Don’t like the therapist(s) you’ve been assigned?</h1><br>
+              <p>Don’t fret. While we pride ourselves on having robust machine learning systems we don’t shy away from
+                human communication. </p><br>
+              <p>If you like, we’ll have a volunteer ready to hear you out for the time being and connect you with the
+                therapist you think is right for you.</p><br>
+              <p>Or you can simply send us an email after browsing through the profiles, and we’ll let you know your
+                desired therapist’s schedule.
+            </div>
+          </div>
+          <div class="slide slide_3">
+            <div class="slide-content">
+              <h1>No need to go to a clinic.</h1><br>
+              <p>Most of our experts offer online therapy with us. You can chat with them right on our website or our
+                mobile app as well as keep track of your worksheets and progress.</p><br>
+              <p>You also have an option to send audio texts and video or voice call your therapist through the app.
+              </p>
+            </div>
+          </div>
+          <div class="slide slide_4">
+            <div class="slide-content">
+              <h2>Slide 4</h2>
+              <p>Content for Slide 4</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="controls">
+      <label for="slide1"></label>
+      <label for="slide2"></label>
+      <label for="slide3"></label>
+      <label for="slide4"></label>
+    </div>
+    <div id="bullets">
+      <label for="slide1"></label>
+      <label for="slide2"></label>
+      <label for="slide3"></label>
+      <label for="slide4"></label>
+    </div>
+  </div>
+
+  <!--2nd text-->
+
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
+
+    <!-- Full-width slides/quotes -->
+    <div class="mySlides">
+      <h1>Creating a Safe Community</h1>
+      <p>We at Therafind are creating a safe and bias free community for all individuals. We aim at building a safe
+        space that fosters support for people who go to therapy and reduce the stigma around mental health.</p>
+    </div>
+
+    <div class="mySlides">
+      <h1>Affordable, Accessible Therapy</h1>
+      <p>We partner with up & coming, remote therapists and bring their services online. This allows us to make
+        therapy more accessible at affordable costs.</p>
+    </div>
+
+    <div class="mySlides">
+      <h1>Find the right therapist for you</h1>
+      <p>Our state of the art AI matches you with the perfect therapist for you based on your responses. You can be
+        assured that you’re talking to somebody who gets you in a non judgemental environment.</p>
+    </div>
+
+    <div class="mySlides">
+      <h1>Therapy from the comfort of your home</h1>
+      <p>Through our app and website, your therapist is always there for you. You can text or call or send a voice
+        note whenever you want. You can keep your therapist updated without ever having to leave your house or travel!
+      </p>
+    </div>
+
+    <!-- Next/prev buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div><br><br>
+
+  <!--Faq's-->
+  <h1 id="faq">FAQ's</h1>
+
+  <details>
+    <summary>1) How do I create accordion?</summary>
+    <div>
+      The tags <em>details</em> and <em>summary</em> have you covered.
+    </div>
+  </details>
+
+  <details>
+    <summary>2) How do I create accordion?</summary>
+    <div>
+      The tags <em>details</em> and <em>summary</em> have you covered.
+    </div>
+  </details>
+
+  <details>
+    <summary>3) How do I create accordion?</summary>
+    <div>
+      The tags <em>details</em> and <em>summary</em> have you covered.
+    </div>
+  </details>
+
+  <details>
+    <summary>4) How do I create accordion?</summary>
+    <div>
+      The tags <em>details</em> and <em>summary</em> have you covered.
+    </div>
+  </details>
+
+  <details>
+    <summary>5) How do I create accordion?</summary>
+    <div>
+      The tags <em>details</em> and <em>summary</em> have you covered.
+    </div>
+  </details>
+
+  <details>
+    <summary> 6) How do I create accordion?</summary>
+    <div>
+      The tags <em>details</em> and <em>summary</em> have you covered.
+    </div>
+  </details>
+
+  <details>
+    <summary> 7) How do I create accordion?</summary>
+    <div>
+      The tags <em>details</em> and <em>summary</em> have you covered.
+    </div>
+  </details>
+
+  <details>
+    <summary>8) How do I create accordion?</summary>
+    <div>
+      The tags <em>details</em> and <em>summary</em> have you covered.
+    </div>
+  </details>
+
+  <details>
+    <summary>9) How do I create accordion?</summary>
+    <div>
+      The tags <em>details</em> and <em>summary</em> have you covered.
+    </div>
+  </details>
+
+  <details>
+    <summary>10) How do I create accordion?</summary>
+    <div>
+      The tags <em>details</em> and <em>summary</em> have you covered.
+    </div>
+
+  </details>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="static/scripts/responses.js"></script>
+<script src="static/scripts/chat.js"></script>
+
+</html>

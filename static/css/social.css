@@ -1,0 +1,79 @@
+html {
+    scroll-behavior: smooth;
+    font-family: Helvetica, sans-serif, Arial;
+    font-size: 62.5%;
+}
+@media(max-width:998px){
+  html{
+    font-size: 55%;
+  }
+}
+@media(max-width:768px){
+  html{
+    font-size: 45%;
+  }
+}
+
+.navbar {
+    position: fixed;
+    background-color: rgb(245, 238, 238);
+    border-radius: 2.5rem;
+    padding: .3rem;
+    margin: 1rem;
+    width: 98%;
+    height: 10rem;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+.navbar li {
+    float: right;
+    list-style: none;
+    margin: 2.0rem 2.0rem;
+    padding: .2rem;
+    text-align: center;
+}
+
+.navbar ul {
+    overflow: auto;
+    margin: -9.2rem 2.0rem 4.5rem;
+    padding: 0rem;
+}
+
+.navbar li a {
+    width: 100%;
+    font-size: 2.2rem;
+    padding: 1.5rem 2.0rem;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar li a:hover {
+    color: rgb(62, 59, 240);
+}
+
+ /* box */
+ .box1{
+    border: .5rem solid black;
+    margin: 7rem;
+    padding: 15rem;
+    height: 15rem;
+    font-size: 2rem;
+    padding-left: 30rem;
+    padding-top: 4rem;
+    border-bottom-right-radius: 40rem;
+ }
+ .ammera{
+    background-image: url('/Ameera.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30rem;
+    width: 30rem;
+    float: left;
+    margin-top: -2rem;
+    margin-right: 10rem;
+    margin-left: -26rem;
+    border-radius: 50%;
+ } 
